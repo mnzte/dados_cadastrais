@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="dados">
+    <h1 class="display-5 cl">Dados dos Cadastrantes</h1>
+    <p class="cl"><strong>clique abaixo e obtenha os dados dos alunos</strong></p>
+    <table class="mt-5" >
+    
+        {% for aluno in alunos %}
+        <tr>
+            <td ><a href="{% url 'aluno' id=aluno.id %}" class="btn btn-primary btn-sm btn-dark">Vizualizar</a></td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+{% endblock %}

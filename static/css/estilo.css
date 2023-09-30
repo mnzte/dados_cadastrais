@@ -1,0 +1,48 @@
+* {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: darkgray;
+    width: 100%;
+}
+h1{
+    font-size: large;
+}
+
+.dados{
+    font-size: large;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    flex-direction: column;
+    padding: 0 30%;
+
+}
+
+img {
+    width: 100px;
+}
+
+.cot{
+    background-color: darkgray;
+
+
+}
+body a{
+    width: 210px;
+}
+.container{
+    margin-top: 23px;
+  
+}
+
+table{
+    margin: 10px;
+    padding: 10PX;
+    border: 2px black solid;
+}
+table td{
+       padding: 8px 0;
+}
+.cl{
+    text-align: center;
+}

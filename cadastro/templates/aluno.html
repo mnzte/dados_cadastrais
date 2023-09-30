@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="cot">
+    <div class="container">
+        <h1>Dados dos Cadastrantes</h1>
+        <img class="imagem" src="{{ aluno.foto.url }}" alt="foto de {{aluno.nome}}">
+    
+        <h3>{{aluno.nome}}</h3>
+    
+        <div class="infosPessoais border p-3">
+            <h3>informações pessoais</h3>
+            <div class="row">
+                <div class="col-12">
+                    <p>Idade: {{aluno.idade}}</p>
+                    <p>Cpf: {{aluno.cpf}}</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="infosContatos border p-3">
+            <h3>Contatos</h3>
+            <div class="row">
+                <div class="col-12">
+                    <p>Email: {{aluno.email}}</p>
+                    <p>Contato: {{aluno.contato}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="infoResidenciais border p-3">
+            <h3>localidade</h3>
+            <div class="col-12">
+                <p>Endereço: {{aluno.endereco}}</p>
+                <p>Cep: {{aluno.cep}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="vizu"> <a href="{% url 'index'  %}" class="btn btn-outline-dark btn-sm ">return</a></p>
+
+{% endblock %}
